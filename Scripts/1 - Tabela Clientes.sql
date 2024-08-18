@@ -1,4 +1,4 @@
--- Cria��o da tabela
+Criar tabela
 CREATE TABLE [dbo].[Clientes](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[Nome] [varchar](255) NULL,
@@ -8,10 +8,8 @@ CREATE TABLE [dbo].[Clientes](
 	[DataCadastro] [datetime2](7) NULL
 ) ON [PRIMARY]
 GO
-
--- Inser��o de dados
 SET LANGUAGE 'us_english'
-
+Inserir de dados
 INSERT INTO Clientes VALUES ('Ken','S�nchez','email@email.com',0,'Jan  7 2009 12:00AM')
 INSERT INTO Clientes VALUES ('Terri','Duffy','email@email.com',1,'Jan 24 2008 12:00AM')
 INSERT INTO Clientes VALUES ('Roberto','Tamburello','email@email.com',0,'Nov  4 2007 12:00AM')
@@ -19,22 +17,22 @@ INSERT INTO Clientes VALUES ('Rob','Walters','email@email.com',0,'Nov 28 2007 12
 INSERT INTO Clientes VALUES ('Gail','Erickson','email@email.com',0,'Dec 30 2007 12:00AM')
 INSERT INTO Clientes VALUES ('Jossef','Goldberg','email@email.com',0,'Dec 16 2013 12:00AM')
 INSERT INTO Clientes VALUES ('Dylan','Miller','email@email.com',2,'Feb  1 2009 12:00AM')
-INSERT INTO Clientes VALUES ('Diane','Margheim','email@email.com',0,'Dec 22 2008 12:00AM')
-INSERT INTO Clientes VALUES ('Gigi','Matthew','email@email.com',0,'Jan  9 2009 12:00AM')
-INSERT INTO Clientes VALUES ('Michael','Raheem','email@email.com',2,'Apr 26 2009 12:00AM')
-INSERT INTO Clientes VALUES ('Ovidiu','Cracium','email@email.com',0,'Nov 28 2010 12:00AM')
-INSERT INTO Clientes VALUES ('Thierry','DHers','email@email.com',2,'Dec  4 2007 12:00AM')
-INSERT INTO Clientes VALUES ('Janice','Galvin','email@email.com',2,'Dec 16 2010 12:00AM')
-INSERT INTO Clientes VALUES ('Michael','Sullivan','email@email.com',2,'Dec 23 2010 12:00AM')
-INSERT INTO Clientes VALUES ('Sharon','Salavaria','email@email.com',2,'Jan 11 2011 12:00AM')
-INSERT INTO Clientes VALUES ('David','Bradley','email@email.com',1,'Dec 13 2007 12:00AM')
-INSERT INTO Clientes VALUES ('Kevin','Brown','email@email.com',2,'Jan 19 2007 12:00AM')
-INSERT INTO Clientes VALUES ('John','Wood','email@email.com',2,'Jan 31 2011 12:00AM')
-INSERT INTO Clientes VALUES ('Mary','Dempsey','email@email.com',1,'Feb  7 2011 12:00AM')
-INSERT INTO Clientes VALUES ('Wanida','Benshoof','email@email.com',2,'Dec 31 2010 12:00AM')
-INSERT INTO Clientes VALUES ('Terry','Eminhizer','email@email.com',2,'Feb 23 2009 12:00AM')
-INSERT INTO Clientes VALUES ('Sariya','Harnpadoungsataya','email@email.com',0,'Dec  5 2008 12:00AM')
-INSERT INTO Clientes VALUES ('Mary','Gibson','email@email.com',0,'Jan  5 2009 12:00AM')
+INSERT INTO Clientes VALUES ('Diane','Margheim','email@email.com',0,GETDATE())
+INSERT INTO Clientes VALUES ('Gigi','Matthew','email@email.com',0,GETDATE())
+INSERT INTO Clientes VALUES ('Michael','Raheem','email@email.com',2,GETDATE())
+INSERT INTO Clientes VALUES ('Ovidiu','Cracium','email@email.com',0,GETDATE())
+INSERT INTO Clientes VALUES ('Thierry','DHers','email@email.com',2,GETDATE())
+INSERT INTO Clientes VALUES ('Janice','Galvin','email@email.com',2,GETDATE())
+INSERT INTO Clientes VALUES ('Michael','Sullivan','email@email.com',2,GETDATE())
+INSERT INTO Clientes VALUES ('Sharon','Salavaria','email@email.com',2,GETDATE())
+INSERT INTO Clientes VALUES ('David','Bradley','email@email.com',1,GETDATE())
+INSERT INTO Clientes VALUES ('Kevin','Brown','email@email.com',2,GETDATE())
+INSERT INTO Clientes VALUES ('John','Wood','email@email.com',2,GETDATE())
+INSERT INTO Clientes VALUES ('Mary','Dempsey','email@email.com',1,GETDATE())
+INSERT INTO Clientes VALUES ('Wanida','Benshoof','email@email.com',2,GETDATE())
+INSERT INTO Clientes VALUES ('Terry','Eminhizer','email@email.com',2,GETDATE())
+INSERT INTO Clientes VALUES ('Sariya','Harnpadoungsataya','email@email.com',0,'Dec 5 2008 12:00AM')
+INSERT INTO Clientes VALUES ('Mary','Gibson','email@email.com',0,'Jan 5 2009 12:00AM')
 INSERT INTO Clientes VALUES ('Jill','Williams','email@email.com',0,'Jan 11 2009 12:00AM')
 INSERT INTO Clientes VALUES ('James','Hamilton','email@email.com',0,'Jan 27 2009 12:00AM')
 INSERT INTO Clientes VALUES ('Peter','Krebs','email@email.com',0,'Nov 24 2008 12:00AM')
@@ -42,10 +40,10 @@ INSERT INTO Clientes VALUES ('Jo','Brown','email@email.com',0,'Feb 20 2008 12:00
 INSERT INTO Clientes VALUES ('Guy','Gilbert','email@email.com',0,'Jun 23 2006 12:00AM')
 INSERT INTO Clientes VALUES ('Mark','McArthur','email@email.com',1,'Jan 16 2009 12:00AM')
 INSERT INTO Clientes VALUES ('Britta','Simon','email@email.com',0,'Jan 22 2009 12:00AM')
-INSERT INTO Clientes VALUES ('Margie','Shoop','email@email.com',2,'Dec 28 2008 12:00AM')
+INSERT INTO Clientes VALUES ('Margie','Shoop','email@email.com',1,'Dec 28 2008 12:00AM')
 INSERT INTO Clientes VALUES ('Rebecca','Laszlo','email@email.com',1,'Dec 22 2008 12:00AM')
 INSERT INTO Clientes VALUES ('Annik','Stahl','email@email.com',0,'Dec 10 2008 12:00AM')
-INSERT INTO Clientes VALUES ('Suchitra','Mohan','email@email.com',2,'Feb  9 2009 12:00AM')
+INSERT INTO Clientes VALUES ('Suchitra','Mohan','email@email.com',1,'Feb 9 2009 12:00AM')
 INSERT INTO Clientes VALUES ('Brandon','Heidepriem','email@email.com',1,'Feb  1 2009 12:00AM')
 INSERT INTO Clientes VALUES ('Jose','Lugo','email@email.com',2,'Feb  3 2009 12:00AM')
 INSERT INTO Clientes VALUES ('Chris','Okelberry','email@email.com',0,'Feb 28 2009 12:00AM')

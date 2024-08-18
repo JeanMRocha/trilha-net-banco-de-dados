@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS dbo.Produtos
-
+SET LANGUAGE 'us_english'
 CREATE TABLE Produtos (
 	Id int IDENTITY(1,1) PRIMARY KEY NOT NULL,
 	Nome varchar(255) NOT NULL,
