@@ -1,4 +1,46 @@
-Criar tabela
+
+--SELECT Nome, Sobrenome,Email FROM Clientes  --Seleciona os dados da tabela 
+-- * Faz o retorno de todos os dados da tabela
+-- Ordena a lista do Select
+-- Where -  faz o filtro de dados
+--WHERE Nome Like 'R%' AND Sobrenome = 'Walters' -- Coloca um filtro para um registro específico
+-- AND => concatena resultados onde todos os filtros tem de ser verdadeiros
+-- OR => utilizado quando apenas uma das condições é verdadeira
+-- Like no lugar do Igual e Letra com % Faz a busca por um caractere 
+-- Ex. WHERE Nome LIKE 'R%' Busca todos que comece com R
+-- Ex. WHERE Nome LIKE '%R%' Busca todos que tem R no meio em qualquer lugar
+--ORDER BY Nome, Sobrenome  DESC       -- DESC faz a ordenação decrescente 
+-- Ordena a lista por mais de uma colua usando a vírgula
+
+
+--INSERT INTO Clientes (Nome, Sobrenome, Email, AceitaComunicados, DataCadastro)
+--VALUES ('Leonardo', 'Buta', 'email@email.com', '1', GETDATE())
+
+--SELECT * FROM Clientes --WHERE Nome = '%'
+-- utilize sempre aspas simples
+
+-- Para atualizar um Dado
+
+-- Permite desfazer ações
+		-- BEGIN TRAN   --Executar antes de fazer a alteração.
+		-- ROLLBACK		--Executar após os testes.
+
+
+
+--SELECT * FROM Clientes WHERE Id = 497  --Seleciona a linha a ser atualizada  -- Id não tem aspas
+
+-- Função de atualização
+--UPDATE Clientes
+--SET Email = 'novoemaial@email.com'    -- Seleciona o valor a ser alterado
+--WHERE Id = 497							-- Se não tiver o WHERE vai mudar a tabela inteira
+
+
+--fUNÇÃO de apagar reistro completo
+--DELETE Clientes
+--SET Email = 'novoemaial@email.com'    -- Seleciona o valor a ser alterado
+--WHERE Id = 497
+
+--Criar tabela
 CREATE TABLE [dbo].[Clientes](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[Nome] [varchar](255) NULL,
